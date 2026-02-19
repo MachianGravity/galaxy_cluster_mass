@@ -128,7 +128,16 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+    tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <script>
     const pdfFiles = [
 'modified_2A0335.pdf',  'modified_A0754.pdf',  'modified_A2065.pdf',   'modified_A2877.pdf',   'modified_A3571.pdf',    'modified_HYDRA-A.pdf',   'modified_PKS0745.pdf',
